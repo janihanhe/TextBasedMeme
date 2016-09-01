@@ -14,7 +14,7 @@ public class peli {
 		Scanner lukija = new Scanner( System.in );
 		Random rand = new Random();
 		
-		//T‰h‰n laitetaan niitten scriptattujen eventtien vihollisten nimet, hp ja attack.
+		//T√§h√§n laitetaan niitten scriptattujen eventtien vihollisten nimet, hp ja attack.
 		String[] viholliset ={""};
 		int maxhpv= 100;
 		int maxatv= 25;
@@ -90,16 +90,6 @@ public class peli {
          	System.out.println("");
          	System.out.println("");
          	System.out.println("");
-         	try{
-         	BufferedImage image = ImageIO.read(new File("C:/Users/s1500541/Downloads/BackUp/textbasedmem/TextBasedMeme/src/media/kuva1.png"));
-
-            image.getGraphics().drawLine(1, 1, image.getWidth()-1, image.getHeight()-1);
-            image.getGraphics().drawLine(1, image.getHeight()-1, image.getWidth()-1, 1);
-
-            ImageIO.write(image, "png", new File("C:/Users/s1500541/Downloads/BackUp/textbasedmem/TextBasedMeme/src/media/kuva1output.png"));
-       }
-       catch (IOException e){
-           e.printStackTrace();
 }
 }
 }
