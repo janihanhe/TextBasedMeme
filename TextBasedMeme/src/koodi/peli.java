@@ -6,7 +6,7 @@ import java.net.URL;
 import java.util.Random;
 import java.util.Scanner;
 
-//moi
+//moi mee pois
 
 import javax.imageio.ImageIO;
 
