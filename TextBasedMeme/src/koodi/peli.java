@@ -6,6 +6,8 @@ import java.net.URL;
 import java.util.Random;
 import java.util.Scanner;
 
+//moi
+
 import javax.imageio.ImageIO;
 
 public class peli {
