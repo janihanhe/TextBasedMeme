@@ -1,19 +1,13 @@
 package koodi;
-import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
-import java.net.URL;
 import java.util.Random;
 import java.util.Scanner;
-
-//moi mee pois
-
-import javax.imageio.ImageIO;
 
 public class peli {
 	public static void main(String[] args) throws IOException{
 		
-		Scanner lukija = new Scanner( System.in );
+		Scanner lukijaint = new Scanner( System.in );
+		Scanner lukijas = new Scanner( System.in );
 		Random rand = new Random();
 		
 		//Tähän laitetaan niitten scriptattujen eventtien vihollisten nimet, hp ja attack.
@@ -41,27 +35,32 @@ public class peli {
 		System.out.println("    |_|\\___/_/\\_\\__|____/ \\__,_|___/\\___|\\__,_|_|  |_|\\___|_| |_| |_|\\___|");
 		System.out.println("");
 		System.out.println("                         -The Text Adventure Game-                  ");
-        System.out.println("------------------------------------------------------------------------------");
+        	System.out.println("------------------------------------------------------------------------------");
         System.out.println("");
         
-        System.out.println("Aloita peli painamalla: [1]");
-        System.out.println("Lopeta peli painamalla: [2]");
+        System.out.println("Aloita peli | [1]");
+        System.out.println("Lopeta peli | [2]");
         
-        eka = lukija.nextInt();
+        eka = lukijaint.nextInt();
  
          while(eka !=1 & eka !=2){
         	System.out.println("Komentoa ei tunnistettu");
         	System.out.println("");
         	System.out.println("");
-        	System.out.println("Aloita peli painamalla: [1]");
-            System.out.println("Lopeta peli painamalla: [2]");
-            eka = lukija.nextInt();
+        	System.out.println("Aloita peli | [1]");
+         	System.out.println("Lopeta peli | [2]");
+            eka = lukijaint.nextInt();
          
         }
          if(eka==2){
          	System.out.println("Lopetit pelin");
          	System.exit(0);
          }else if(eka==1){
+         	System.out.println("Kerro nimesi:");
+         	String pelaaja = lukijas.nextLine();
+         	
+         	System.out.println("Selvä "+pelaaja+"!");
+         	System.out.println("");
          	System.out.println("Peli Alkaa...");
          	System.out.println("");
          	System.out.println("");
@@ -92,6 +91,15 @@ public class peli {
          	System.out.println("");
          	System.out.println("");
          	System.out.println("");
+         	System.out.println("------------------------------------------------------------------------------");
+         	System.out.println("Ascii kuva");
+         	System.out.println("------------------------------------------------------------------------------");
+         	System.out.println("Sijainti: Kaupunki? | Päivämäärä: tuntematon | Aika: Yö?");
+         	System.out.println(" -Havahdut kovaan ääneen- ");
+         	System.out.println(pelaaja+": Missä olen?");
+         	System.out.println(" -Näet tyhjän kaupungin ympärilläsi- ");
+         	System.out.println("Nousetko ylös vai jäätkö nukkumaan?");
+         	
 }
 }
 }
