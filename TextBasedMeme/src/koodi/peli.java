@@ -1,4 +1,4 @@
-	package koodi;
+package koodi;
 	import java.io.IOException;
 	import java.util.Random;
 	import java.util.Scanner;
@@ -17,7 +17,6 @@
 			
 			//Pelaaja
 			String pelaaja = null;
-			String valinta1 = null;
 			int hp=100;
 			int at= 20;
 			int potion=3;      //kuinka monta potionia pelaaja saa heti
@@ -26,6 +25,8 @@
 			
 			// peli
 			int eka;
+			String valinta1 = null;
+			String valinta2 = null;
 			System.out.println("------------------------------------------------------------------------------");
 			System.out.println("");
 			System.out.println("");
@@ -56,6 +57,8 @@
 	        }
 	         if(eka==2){
 	         	System.out.println("Lopetit pelin");
+	         	System.out.println("Paina ENTER lopettaaksesi");
+	         	lukijas.nextLine();
 	         	System.exit(0);
 	         }else if(eka==1){
 	         	System.out.println("Kerro nimesi:");
@@ -125,8 +128,21 @@
 	         	System.out.println(" -Kuulet saman kovan äänen uudestaan- ");
 	         	System.out.println(pelaaja+": Mistä tuo tulee?");
 	         	System.out.println(" - Käännyt ympäri ja huomaat että ääni kuuluu nyt edessäsi olevalta kujalta- ");
-	         	System.out.println(" -- ");
-	         	
+	         	System.out.println(" Seuraatko ääntä? ");
+	         	System.out.println("Kyllä vai Ei");
+	         	valinta2 = lukijas.nextLine();
+	         }
+	         if(valinta2.equals("Ei")){
+	         	System.out.println(" -Lähdet seuraamaan aiemmin näkemääsi valoa- ");
+	         	System.out.println(" ");// JOS EI TAISTELE VIHOLLSTA NIIN TÄMÄ JATKUU TÄSTÄ
+	         }else if(valinta2.equals("Kyllä")){
+	        	 System.out.println("Kävelet kujaa päin ja eteesi hyppää villi koira");
+	        	 System.out.println(pelaaja+": Kiltti koira, en tahdo sinulle pahaa");
+	        	 System.out.println("Koira murisee ja hyökkää. Sinun on pakko taistella");
+	        	 System.out.println("------------------------------------------------------------------------------");
+	        	 System.out.println("lisää ascii koiran naama");
+	        	 System.out.println("------------------------------------------------------------------------------");
+	        	 //Lisää taistelu systeemi tähän
 	}
 	}
 	}
