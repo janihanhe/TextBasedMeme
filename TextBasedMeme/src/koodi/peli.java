@@ -99,10 +99,9 @@ public class peli {
          	System.out.println("Ascii kuva");
          	System.out.println("------------------------------------------------------------------------------");
          	System.out.println("Sijainti: Kaupunki? | Päivämäärä: tuntematon | Aika: Yö?");
-         	System.out.println(" -Havahdut kovaan ääneen- ");
+         	System.out.println(" -Kuulet kovan äänen- ");
          	System.out.println(pelaaja+": Mitä?");
-         	System.out.println(" -Näet tyhjän kaupungin ympärilläsi- ");
-         	System.out.println(" -Makaat kylmällä kadulla-");
+         	System.out.println(" -Avaat silmäsi ja huomaat että makaat pimeällä, kylmällä kadulla- ");
          	System.out.println("Nousetko ylös?");
          	System.out.println("Kyllä vai Ei");
          	valinta1 = lukijas.nextLine();
@@ -112,11 +111,12 @@ public class peli {
          	System.out.println(" ");// lisää tähän paskaa kun peli on valmis. End credits, tarinan loppu jne
          	System.exit(0);
          }else if(valinta1.equals("Kyllä")){
-         	System.out.println(" -Nouset ylös ja näet edessäsi pimeän ja kylmältä tuntuvan kaupungin- ");
+         	System.out.println(" -Nouset ylös, näkösi on vähän sumea ja päätäsi särkee- ");
          	System.out.println(pelaaja+": Missä olen? ");
-         	System.out.println(" -Kun katsot loputtomalta tuntuvaa katua edessäsi, näet himmeän valon- ");
-         	System.out.println(pelaaja+": Onko siellä jo..");
-         	System.out.println(" -Et saa sanaasi loppuun koska kuulet saman kovan äänen uudestaan- ");
+         	Systme.out.println(" -Hierot silmiäsi- ");
+         	System.out.println(" -Kun näkösi selvenee huomaat olevasi loputtomalta tuntuvassa kadulla, näet himmeän valon- ");
+         	System.out.println(pelaaja+": Onko siellä joku?");
+         	System.out.println(" -Kuulet saman kovan äänen uudestaan- ");
          	System.out.println(pelaaja+": Mistä tuo tulee?");
          	System.out.println(" - Käännyt ympäri ja huomaat että ääni kuuluu nyt edessäsi olevalta kujalta- ");
          	System.out.println(" -- ");
