@@ -203,7 +203,7 @@ package koodi;
 	        		 System.out.println(pelaaja+": Löysin yhden HP juoman");
 	        		 System.out.println(pelaaja+" HP juomia on nyt"+potion);
 	        	 }
-	        	 System.out.println(""); // Jatka tarinaa tästä eteenpäin
+	        	 System.out.println(""); // Jatka tarinaa tästä eteenpäin päin
 	}
 	}
 	}
