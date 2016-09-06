@@ -11,7 +11,7 @@ package koodi;
 			Random rand = new Random();
 			
 			//Tähän laitetaan niitten scriptattujen eventtien vihollisten nimet, hp ja attack.
-			String[] viholliset ={""};
+			String[] koirat ={"Pörö Koira", "Tolkien Koira","Burgeri Koira","Tavi Koira","Api Koira","Spörö Koira","Ravi Koira"}; //koiran nimiä. et peli randomilla valitsee jonkun näist.
 			int maxhpv= 100;
 			int maxatv= 25;
 			
@@ -123,7 +123,7 @@ package koodi;
 	         	System.out.println(" -Nouset ylös, näkösi on vähän sumea ja päätäsi särkee- ");
 	         	System.out.println(pelaaja+": Missä olen? ");
 	         	System.out.println(" -Hierot silmiäsi- ");
-	         	System.out.println(" -Kun näkösi selvenee huomaat olevasi loputtomalta tuntuvassa kadulla, näet himmeän valon- ");
+	         	System.out.println(" -Kun näkösi selvenee huomaat olevasi loputtomalta tuntuvalla kadulla, näet himmeän valon- ");
 	         	System.out.println(pelaaja+": Onko siellä joku?");
 	         	System.out.println(" -Kuulet saman kovan äänen uudestaan- ");
 	         	System.out.println(pelaaja+": Mistä tuo tulee?");
@@ -134,15 +134,76 @@ package koodi;
 	         }
 	         if(valinta2.equals("Ei")){
 	         	System.out.println(" -Lähdet seuraamaan aiemmin näkemääsi valoa- ");
-	         	System.out.println(" ");// JOS EI TAISTELE VIHOLLSTA NIIN TÄMÄ JATKUU TÄSTÄ
-	         }else if(valinta2.equals("Kyllä")){
+	         	System.out.println(" ");// TIE 1: JOKU LISÄÄ TÄHÄN PASKAA
+	         }else if(valinta2.equals("Kyllä")){ // TIE 2: JOKU LISÄÄ TÄHÄN PASKAA
 	        	 System.out.println("Kävelet kujaa päin ja eteesi hyppää villi koira");
 	        	 System.out.println(pelaaja+": Kiltti koira, en tahdo sinulle pahaa");
 	        	 System.out.println("Koira murisee ja hyökkää. Sinun on pakko taistella");
+	        	 
+	        	 int hpv = rand.nextInt (maxhpv);
+	        	 int atv = rand.nextInt(maxatv);
+	        	 String koira = koirat[rand.nextInt(koirat.length)];
 	        	 System.out.println("------------------------------------------------------------------------------");
 	        	 System.out.println("lisää ascii koiran naama");
+	        	 System.out.println("\t# " + koira + " ilmestyi! #\n" );
 	        	 System.out.println("------------------------------------------------------------------------------");
-	        	 //Lisää taistelu systeemi tähän
+	        	 
+	        	 
+	        	 while(hpv > 0) {
+	        		 System.out.println("\t" + koira + "n HP: "+ hpv);
+	        		 System.out.println("\t "+pelaaja+" HP: " + hp);
+	        		 System.out.println("\n\tMitä teet?");
+	        		 System.out.println("\t1. Hyökkää");
+	        		 System.out.println("\t2. Juo HP juoma");
+	        		 
+	        		 String t1 = lukijas.nextLine();
+	        		 if(t1.equals("1")) {
+	        			 int hyökkäys = rand.nextInt(at);
+	        			 int vahinko = rand.nextInt(atv);
+	        			 
+	        			 hpv -= at;
+	        			 hp -= atv;
+	        			 
+	        			 System.out.println("\t> "+pelaaja+" lyö ja osuu "+koira+"an ja tekee "+hyökkäys+ " vahinkoa");
+	        			 System.out.println("\t> "+koira+" osuu ja "+pelaaja+" menettää "+vahinko+" Hp pistettä");
+	        			 
+	        			 if(hp < 1) {
+	        				 System.out.println(pelaaja+" on saanut liian paljon vahinkoa");
+	        				 System.out.println("-Menetät tajuntasi-");
+	        				 System.out.println("Paina ENTER jatkaaksesi");
+	        		         	lukijas.nextLine();
+	        				 System.out.println("");// lisää credits tähän
+	        			 }
+	        				 
+	        			 }
+	        		 else if(t1.equals("2")) {
+	        			 if(potion > 0) {
+	        				 hp += potionhp;
+	        				 potion--;
+	        				 System.out.println("\t> "+pelaaja+" Juo HP juoman ja saa "+potionhp+ "HP pistettä takaisin");
+	        				 System.out.println("\n\t> "+pelaaja+": HP on nyt "+hp+" HP pistettä");
+	        				 System.out.println("\n\t> "+pelaaja+": HP juomia on nyt "+potion+"\n");
+	        			 }
+	        			 else {
+	        				 System.out.println(pelaaja+": HP juomia ei enään ole...");
+	        			 }
+	        			 
+	        		 }
+	        		 else {
+	        			 System.out.println("Komentoa ei tunnistettu");
+	        		 }
+	        	 }
+	        	 System.out.println("------------------------------------------------------------------------------");
+	        	 System.out.println("lisää ascii koiran naama joka on voitettu eli x silmissä tai jotain");
+	        	 System.out.println("\t# " + koira + " voitettiin! #\n" );
+	        	 System.out.println("\t# "+pelaaja+": Minulle jäi "+hp+" HP Pistettä jäljelle #\n" );
+	        	 System.out.println("------------------------------------------------------------------------------");
+	        	 if(rand.nextInt(100) < potiondrop) {
+	        		 potion++;
+	        		 System.out.println(pelaaja+": Löysin yhden HP juoman");
+	        		 System.out.println(pelaaja+" HP juomia on nyt"+potion);
+	        	 }
+	        	 System.out.println(""); // Jatka tarinaa tästä
 	}
 	}
 	}
