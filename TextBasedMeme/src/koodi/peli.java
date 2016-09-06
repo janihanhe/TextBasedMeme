@@ -131,7 +131,8 @@ package koodi;
 	         	System.out.println(" Seuraatko ääntä? ");
 	         	System.out.println("Kyllä vai Ei");
 	         	valinta2 = lukijas.nextLine();
-	         }
+	         
+	         
 	         if(valinta2.equals("Ei")){
 	         	System.out.println(" -Lähdet seuraamaan aiemmin näkemääsi valoa- ");
 	         	System.out.println(" ");// TIE 1: JOKU LISÄÄ TÄHÄN PASKAA
@@ -203,7 +204,15 @@ package koodi;
 	        		 System.out.println(pelaaja+": Löysin yhden HP juoman");
 	        		 System.out.println(pelaaja+" HP juomia on nyt"+potion);
 	        	 }
-	        	 System.out.println(""); // Jatka tarinaa tästä eteenpäin päin
+	        	 System.out.println(""); // Jatka tarinaa tästä
 	}
+	         else{//jos et vastaa oikein tokaan kysymykseen
+	      		System.out.println("Tuntematon komento");
+	      	}
+		
+	}
+	         else{ //jos et vastaa oikein nousetko ylös kysymykseen.
+	      		System.out.println("Tuntematon komento");
+	      	}
 	}
 	}
