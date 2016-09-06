@@ -10,8 +10,8 @@ package koodi;
 			Scanner lukijas = new Scanner( System.in );
 			Random rand = new Random();
 			
-			//T√§h√§n laitetaan niitten scriptattujen eventtien vihollisten nimet, hp ja attack.
-			String[] koirat ={"P√∂r√∂ Koira", "Tolkien Koira","Burgeri Koira","Tavi Koira","Api Koira","Sp√∂r√∂ Koira","Ravi Koira"}; //koiran nimi√§. et peli randomilla valitsee jonkun n√§ist.
+			//T‰h‰n laitetaan niitten scriptattujen eventtien vihollisten nimet, hp ja attack.
+			String[] koirat ={"Pˆrˆ Koira", "Tolkien Koira","Burgeri Koira","Tavi Koira","Api Koira","Spˆrˆ Koira","Ravi Koira"}; //koiran nimi‰. et peli randomilla valitsee jonkun n‰ist.
 			int maxhpv= 100;
 			int maxatv= 25;
 			
@@ -64,7 +64,7 @@ package koodi;
 	         	System.out.println("Kerro nimesi:");
 	         	pelaaja = lukijas.nextLine();
 	         	
-	         	System.out.println("Selv√§ "+pelaaja+"!");
+	         	System.out.println("Selv‰ "+pelaaja+"!");
 	         	System.out.println("Paina ENTER jatkaaksesi");
 	         	lukijas.nextLine();
 	         	System.out.println("");
@@ -107,44 +107,44 @@ package koodi;
 	         	System.out.println("|o o o| |  | OO |  / || \\  |  0  |      /__\\    (__)   /____\\                 ");
 	         	System.out.println("|__A__| |  |_AA_| /  ||  \\ |__A__| |-----||------||------||------|            ");
 	         	System.out.println("------------------------------------------------------------------------------");
-	         	System.out.println("Sijainti: Kaupunki? | P√§iv√§m√§√§r√§: tuntematon | Aika: Y√∂?");
-	         	System.out.println(" -Kuulet kovan √§√§nen- ");
-	         	System.out.println(pelaaja+": Mit√§?");
-	         	System.out.println(" -Avaat silm√§si ja huomaat ett√§ makaat pime√§ll√§, kylm√§ll√§ kadulla- ");
-	         	System.out.println("Nousetko yl√∂s?");
-	         	System.out.println("Kyll√§ vai Ei");
+	         	System.out.println("Sijainti: Kaupunki? | P‰iv‰m‰‰r‰: tuntematon | Aika: Yˆ?");
+	         	System.out.println(" -Kuulet kovan ‰‰nen- ");
+	         	System.out.println(pelaaja+": Mit‰?");
+	         	System.out.println(" -Avaat silm‰si ja huomaat ett‰ makaat pime‰ll‰, kylm‰ll‰ kadulla- ");
+	         	System.out.println("Nousetko ylˆs?");
+	         	System.out.println("Kyll‰ vai Ei");
 	         	valinta1 = lukijas.nextLine();
 	         }
 	         if(valinta1.equals("Ei")){
-	         	System.out.println(" -Laitoit silm√§si kiinni- ");
-	         	System.out.println(" ");// lis√§√§ t√§h√§n paskaa kun peli on valmis. End credits, tarinan loppu jne
+	         	System.out.println(" -Laitoit silm‰si kiinni- ");
+	         	System.out.println(" ");// lis‰‰ t‰h‰n paskaa kun peli on valmis. End credits, tarinan loppu jne
 	         	System.exit(0);
-	         }else if(valinta1.equals("Kyll√§")){
-	         	System.out.println(" -Nouset yl√∂s, n√§k√∂si on v√§h√§n sumea ja p√§√§t√§si s√§rkee- ");
-	         	System.out.println(pelaaja+": Miss√§ olen? ");
-	         	System.out.println(" -Hierot silmi√§si- ");
-	         	System.out.println(" -Kun n√§k√∂si selvenee huomaat olevasi loputtomalta tuntuvalla kadulla, n√§et himme√§n valon- ");
-	         	System.out.println(pelaaja+": Onko siell√§ joku?");
-	         	System.out.println(" -Kuulet saman kovan √§√§nen uudestaan- ");
-	         	System.out.println(pelaaja+": Mist√§ tuo tulee?");
-	         	System.out.println(" - K√§√§nnyt ymp√§ri ja huomaat ett√§ √§√§ni kuuluu nyt edess√§si olevalta kujalta- ");
-	         	System.out.println(" Seuraatko √§√§nt√§? ");
-	         	System.out.println("Kyll√§ vai Ei");
+	         }else if(valinta1.equals("Kyll‰")){
+	         	System.out.println(" -Nouset ylˆs, n‰kˆsi on v‰h‰n sumea ja p‰‰t‰si s‰rkee- ");
+	         	System.out.println(pelaaja+": Miss‰ olen? ");
+	         	System.out.println(" -Hierot silmi‰si- ");
+	         	System.out.println(" -Kun n‰kˆsi selvenee huomaat olevasi loputtomalta tuntuvalla kadulla, n‰et himme‰n valon- ");
+	         	System.out.println(pelaaja+": Onko siell‰ joku?");
+	         	System.out.println(" -Kuulet saman kovan ‰‰nen uudestaan- ");
+	         	System.out.println(pelaaja+": Mist‰ tuo tulee?");
+	         	System.out.println(" - K‰‰nnyt ymp‰ri ja huomaat ett‰ ‰‰ni kuuluu nyt edess‰si olevalta kujalta- ");
+	         	System.out.println(" Seuraatko ‰‰nt‰? ");
+	         	System.out.println("Kyll‰ vai Ei");
 	         	valinta2 = lukijas.nextLine();
 	         }
 	         if(valinta2.equals("Ei")){
-	         	System.out.println(" -L√§hdet seuraamaan aiemmin n√§kem√§√§si valoa- ");
-	         	System.out.println(" ");// TIE 1: JOKU LIS√Ñ√Ñ T√ÑH√ÑN PASKAA
-	         }else if(valinta2.equals("Kyll√§")){ // TIE 2: JOKU LIS√Ñ√Ñ T√ÑH√ÑN PASKAA
-	        	 System.out.println("K√§velet kujaa p√§in ja eteesi hypp√§√§ villi koira");
+	         	System.out.println(" -L‰hdet seuraamaan aiemmin n‰kem‰‰si valoa- ");
+	         	System.out.println(" ");// TIE 1: JOKU LISƒƒ TƒHƒN PASKAA
+	         }else if(valinta2.equals("Kyll‰")){ // TIE 2: JOKU LISƒƒ TƒHƒN PASKAA
+	        	 System.out.println("K‰velet kujaa p‰in ja eteesi hypp‰‰ villi koira");
 	        	 System.out.println(pelaaja+": Kiltti koira, en tahdo sinulle pahaa");
-	        	 System.out.println("Koira murisee ja hy√∂kk√§√§. Sinun on pakko taistella");
+	        	 System.out.println("Koira murisee ja hyˆkk‰‰. Sinun on pakko taistella");
 	        	 
 	        	 int hpv = rand.nextInt (maxhpv);
 	        	 int atv = rand.nextInt(maxatv);
 	        	 String koira = koirat[rand.nextInt(koirat.length)];
 	        	 System.out.println("------------------------------------------------------------------------------");
-	        	 System.out.println("lis√§√§ ascii koiran naama");
+	        	 System.out.println("lis‰‰ ascii koiran naama");
 	        	 System.out.println("\t# " + koira + " ilmestyi! #\n" );
 	        	 System.out.println("------------------------------------------------------------------------------");
 	        	 
@@ -152,27 +152,27 @@ package koodi;
 	        	 while(hpv > 0) {
 	        		 System.out.println("\t" + koira + "n HP: "+ hpv);
 	        		 System.out.println("\t "+pelaaja+" HP: " + hp);
-	        		 System.out.println("\n\tMit√§ teet?");
-	        		 System.out.println("\t1. Hy√∂kk√§√§");
+	        		 System.out.println("\n\tMit‰ teet?");
+	        		 System.out.println("\t1. Hyˆkk‰‰");
 	        		 System.out.println("\t2. Juo HP juoma");
 	        		 
 	        		 String t1 = lukijas.nextLine();
 	        		 if(t1.equals("1")) {
-	        			 int hy√∂kk√§ys = rand.nextInt(at);
+	        			 int hyˆkk‰ys = rand.nextInt(at);
 	        			 int vahinko = rand.nextInt(atv);
 	        			 
 	        			 hpv -= at;
 	        			 hp -= atv;
 	        			 
-	        			 System.out.println("\t> "+pelaaja+" ly√∂ ja osuu "+koira+"an ja tekee "+hy√∂kk√§ys+ " vahinkoa");
-	        			 System.out.println("\t> "+koira+" osuu ja "+pelaaja+" menett√§√§ "+vahinko+" Hp pistett√§");
+	        			 System.out.println("\t> "+pelaaja+" lyˆ ja osuu "+koira+"an ja tekee "+hyˆkk‰ys+ " vahinkoa");
+	        			 System.out.println("\t> "+koira+" osuu ja "+pelaaja+" menett‰‰ "+vahinko+" Hp pistett‰");
 	        			 
 	        			 if(hp < 1) {
 	        				 System.out.println(pelaaja+" on saanut liian paljon vahinkoa");
-	        				 System.out.println("-Menet√§t tajuntasi-");
+	        				 System.out.println("-Menet‰t tajuntasi-");
 	        				 System.out.println("Paina ENTER jatkaaksesi");
 	        		         	lukijas.nextLine();
-	        				 System.out.println("");// lis√§√§ credits t√§h√§n
+	        				 System.out.println("");// lis‰‰ credits t‰h‰n
 	        			 }
 	        				 
 	        			 }
@@ -180,12 +180,12 @@ package koodi;
 	        			 if(potion > 0) {
 	        				 hp += potionhp;
 	        				 potion--;
-	        				 System.out.println("\t> "+pelaaja+" Juo HP juoman ja saa "+potionhp+ "HP pistett√§ takaisin");
-	        				 System.out.println("\n\t> "+pelaaja+": HP on nyt "+hp+" HP pistett√§");
+	        				 System.out.println("\t> "+pelaaja+" Juo HP juoman ja saa "+potionhp+ "HP pistett‰ takaisin");
+	        				 System.out.println("\n\t> "+pelaaja+": HP on nyt "+hp+" HP pistett‰");
 	        				 System.out.println("\n\t> "+pelaaja+": HP juomia on nyt "+potion+"\n");
 	        			 }
 	        			 else {
-	        				 System.out.println(pelaaja+": HP juomia ei en√§√§n ole...");
+	        				 System.out.println(pelaaja+": HP juomia ei en‰‰n ole...");
 	        			 }
 	        			 
 	        		 }
@@ -194,16 +194,16 @@ package koodi;
 	        		 }
 	        	 }
 	        	 System.out.println("------------------------------------------------------------------------------");
-	        	 System.out.println("lis√§√§ ascii koiran naama joka on voitettu eli x silmiss√§ tai jotain");
+	        	 System.out.println("lis‰‰ ascii koiran naama joka on voitettu eli x silmiss‰ tai jotain");
 	        	 System.out.println("\t# " + koira + " voitettiin! #\n" );
-	        	 System.out.println("\t# "+pelaaja+": Minulle j√§i "+hp+" HP Pistett√§ j√§ljelle #\n" );
+	        	 System.out.println("\t# "+pelaaja+": Minulle j‰i "+hp+" HP Pistett‰ j‰ljelle #\n" );
 	        	 System.out.println("------------------------------------------------------------------------------");
 	        	 if(rand.nextInt(100) < potiondrop) {
 	        		 potion++;
-	        		 System.out.println(pelaaja+": L√∂ysin yhden HP juoman");
+	        		 System.out.println(pelaaja+": Lˆysin yhden HP juoman");
 	        		 System.out.println(pelaaja+" HP juomia on nyt"+potion);
 	        	 }
-	        	 System.out.println(""); // Jatka tarinaa t√§st√§ eteenp√§in
+	        	 System.out.println(""); // Jatka tarinaa t‰st‰
 	}
 	}
 	}
