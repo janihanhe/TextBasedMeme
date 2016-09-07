@@ -208,6 +208,7 @@ package koodi;
 	}
 	         else{//jos et vastaa oikein tokaan kysymykseen
 	      		System.out.println("Tuntematon komento");
+	      		//moi
 	      	}
 		
 	}
