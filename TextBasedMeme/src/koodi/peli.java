@@ -12,16 +12,20 @@ package koodi;
 			
 			//Tähän laitetaan niitten scriptattujen eventtien vihollisten nimet, hp ja attack.
 			String[] koirat ={"Pörö Koira", "Tolkien Koira","Burgeri Koira","Tavi Koira","Api Koira","Spörö Koira","Ravi Koira"}; //koiran nimiä. et peli randomilla valitsee jonkun näist.
+			String[] koiraAse ={"Luu","Irronnut luu","I've got a bone to pick with you","Haukuttaja"};
 			int maxhpv= 100;
-			int maxatv= 25;
+			int maxatv= 45;
 			
 			//Pelaaja
 			String pelaaja = null;
 			int hp=100;
 			int at= 20;
+			int koiraAt=3;
 			int potion=3;      //kuinka monta potionia pelaaja saa heti
 			int potionhp=30;   //kuinka paljon potion healaa
-			int potiondrop=50; //prosentti
+			int potiondrop=35; //prosentti
+			int koiradrop=100; // aseen drop rate
+			
 			
 			// peli
 			int eka;
@@ -166,8 +170,8 @@ package koodi;
 	        			 int hyökkäys = rand.nextInt(at);
 	        			 int vahinko = rand.nextInt(atv);
 	        			 
-	        			 hpv -= at;
-	        			 hp -= atv;
+	        			 hpv -= hyökkäys;
+	        			 hp -= vahinko;
 	        			 
 	        			 System.out.println("\t> "+pelaaja+" lyö ja osuu "+koira+"an ja tekee "+hyökkäys+ " vahinkoa");
 	        			 System.out.println("\t> "+koira+" osuu ja "+pelaaja+" menettää "+vahinko+" Hp pistettä");
@@ -212,18 +216,20 @@ package koodi;
 	        		 System.out.println(pelaaja+": Löysin yhden HP juoman");
 	        		 System.out.println(pelaaja+" HP juomia on nyt"+potion);
 	        	 }
+	        	 if(rand.nextInt(100) < koiradrop) {
+	        		String ase = koiraAse [rand.nextInt(koiraAse.length)];
+	        		 at+=koiraAt;
+	        		 System.out.println(pelaaja+": Löysin "+ase+" aseen");
+	        		 System.out.println(pelaaja+" Hyökkäykseni tekee nyt maximissaan "+at+" vahinkoa");
+	        	 }
 	        	 System.out.println(""); // Jatka tarinaa tästä
-	}
-	         else{//jos et vastaa oikein tokaan kysymykseen
+	        
+	         }else{//jos et vastaa oikein tokaan kysymykseen
 	      		System.out.println("Tuntematon komento");
 	      	}
 		
 	}
-<<<<<<< HEAD
-	         else{ //jos et vastaa oikein nousetko ylös kysymykseen.asaaaz
-=======
-	         else{ //jos et vastaa oikein nousetko ylös kysymykseen.asaaazzzz
->>>>>>> origin/master
+	         else{ //jos et vastaa oikein nousetko ylös kysymykseen
 	      		System.out.println("Tuntematon komento");
 	      	}
 	}
