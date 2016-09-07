@@ -24,7 +24,7 @@ package koodi;
 			int potion=3;      //kuinka monta potionia pelaaja saa heti
 			int potionhp=30;   //kuinka paljon potion healaa
 			int potiondrop=35; //prosentti
-			int koiradrop=100; // aseen drop rate
+			int koiradrop=33; // aseen drop rate
 			
 			
 			// peli
@@ -113,36 +113,43 @@ package koodi;
 	         	System.out.println("------------------------------------------------------------------------------");
 	         	System.out.println("Sijainti: Kaupunki? | Päivämäärä: tuntematon | Aika: Yö?");
 	         	System.out.println(" -Kuulet kovan äänen- ");
+	         	System.out.println("");
 	         	System.out.println(pelaaja+": Mitä?");
 	         	System.out.println(" -Avaat silmäsi ja huomaat että makaat pimeällä, kylmällä kadulla- ");
+	         	System.out.println("");
 	         	System.out.println("Nousetko ylös?");
 	         	System.out.println("Kyllä vai Ei");
 	         	valinta1 = lukijas.nextLine();
 	         }
-	         if(valinta1.equals("Ei")){
+	         if(valinta1.equals("Ei") || valinta1.equals("ei")){
 	         	System.out.println(" -Laitoit silmäsi kiinni- ");
 	         	System.out.println(" ");// lisää tähän paskaa kun peli on valmis. End credits, tarinan loppu jne
 	         	System.exit(0);
-	         }else if(valinta1.equals("Kyllä")){
+	         }else if(valinta1.equals("Kyllä") || valinta1.equals("kyllä")){
 	         	System.out.println(" -Nouset ylös, näkösi on vähän sumea ja päätäsi särkee- ");
+	         	System.out.println("");
 	         	System.out.println(pelaaja+": Missä olen? ");
 	         	System.out.println(" -Hierot silmiäsi- ");
 	         	System.out.println(" -Kun näkösi selvenee katsot ympärillesi ja huomaat maassa kolme pulloa jossa on punaista nestettä. Pullossa lukee HP- ");
 				System.out.println(" -Otat pullot maasta ja pistät ne taskuun. Huomaat loputtomalta tuntuvan kadun päässä valon");
+				System.out.println("");
 	         	System.out.println(pelaaja+": Onko siellä joku?");
 	         	System.out.println(" -Kuulet saman kovan äänen uudestaan- ");
+	         	System.out.println("");
 	         	System.out.println(pelaaja+": Mistä tuo tulee?");
 	         	System.out.println(" - Käännyt ympäri ja huomaat että ääni kuuluu nyt edessäsi olevalta kujalta- ");
+	         	System.out.println("");
 	         	System.out.println(" Seuraatko ääntä? ");
 	         	System.out.println("Kyllä vai Ei");
 	         	valinta2 = lukijas.nextLine();
 	         
 	         
-	         if(valinta2.equals("Ei")){
+	         if(valinta2.equals("Ei") || valinta2.equals("ei")){
 	         	System.out.println(" -Lähdet seuraamaan aiemmin näkemääsi valoa- ");
 	         	System.out.println(" ");// TIE 1: JOKU LISÄÄ TÄHÄN PASKAA
-	         }else if(valinta2.equals("Kyllä")){ // TIE 2: JOKU LISÄÄ TÄHÄN PASKAA
+	         }else if(valinta2.equals("Kyllä") || valinta2.equals("kyllä")){ // TIE 2: JOKU LISÄÄ TÄHÄN PASKAA
 	        	 System.out.println("Kävelet kujaa päin ja eteesi hyppää villi koira");
+	        	 System.out.println("");
 	        	 System.out.println(pelaaja+": Kiltti koira, en tahdo sinulle pahaa");
 	        	 System.out.println("Koira murisee ja hyökkää. Sinun on pakko taistella");
 	        	 
@@ -176,6 +183,7 @@ package koodi;
 	        			 
 	        			 System.out.println("\t> "+pelaaja+" lyö ja osuu "+koira+"an ja tekee "+hyökkäys+ " vahinkoa");
 	        			 System.out.println("\t> "+koira+" osuu ja "+pelaaja+" menettää "+vahinko+" Hp pistettä");
+	        			 System.out.println("");
 	        			 
 	        			 if(hp < 1) {
 	        				 System.out.println(pelaaja+" on saanut liian paljon vahinkoa");
@@ -191,6 +199,7 @@ package koodi;
 	        				 hp += potionhp;
 	        				 potion--;
 	        				 System.out.println("\t> "+pelaaja+" Juo HP juoman ja saa "+potionhp+ "HP:ta takaisin");
+	        				 System.out.println("");
 	        				 System.out.println("\n\t> "+pelaaja+": HP on nyt "+hp+" HP pistettä");
 	        				 System.out.println("\n\t> "+pelaaja+": HP juomia on nyt "+potion+"\n");
 	        			 }
