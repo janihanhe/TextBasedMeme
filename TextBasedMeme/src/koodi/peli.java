@@ -219,7 +219,7 @@ package koodi;
 	      	}
 		
 	}
-	         else{ //jos et vastaa oikein nousetko ylös kysymykseen.asaaa
+	         else{ 
 	      		System.out.println("Tuntematon komento");
 	      	}
 	}
