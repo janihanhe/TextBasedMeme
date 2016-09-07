@@ -127,7 +127,8 @@ package koodi;
 	         	System.out.println(" -Nouset ylös, näkösi on vähän sumea ja päätäsi särkee- ");
 	         	System.out.println(pelaaja+": Missä olen? ");
 	         	System.out.println(" -Hierot silmiäsi- ");
-	         	System.out.println(" -Kun näkösi selvenee huomaat olevasi loputtomalta tuntuvalla kadulla, näet himmeän valon- ");
+	         	System.out.println(" -Kun näkösi selvenee katsot ympärillesi ja huomaat maassa kolme pulloa jossa on punaista nestettä. Pullossa lukee HP- ");
+				System.out.println(" -Otat pullot maasta ja pistät ne taskuun. Huomaat loputtomalta tuntuvan kadun päässä valon");
 	         	System.out.println(pelaaja+": Onko siellä joku?");
 	         	System.out.println(" -Kuulet saman kovan äänen uudestaan- ");
 	         	System.out.println(pelaaja+": Mistä tuo tulee?");
@@ -178,7 +179,7 @@ package koodi;
 	        			 
 	        			 if(hp < 1) {
 	        				 System.out.println(pelaaja+" on saanut liian paljon vahinkoa");
-	        				 System.out.println("-Menetät tajuntasi-");
+	        				 System.out.println("-Näkösi sumenee ja menetät tajuntasi-");
 	        				 System.out.println("Paina ENTER jatkaaksesi");
 	        		         	lukijas.nextLine();
 	        				 System.out.println("");// lisää credits tähän
@@ -189,12 +190,12 @@ package koodi;
 	        			 if(potion > 0) {
 	        				 hp += potionhp;
 	        				 potion--;
-	        				 System.out.println("\t> "+pelaaja+" Juo HP juoman ja saa "+potionhp+ "HP pistettä takaisin");
+	        				 System.out.println("\t> "+pelaaja+" Juo HP juoman ja saa "+potionhp+ "HP:ta takaisin");
 	        				 System.out.println("\n\t> "+pelaaja+": HP on nyt "+hp+" HP pistettä");
 	        				 System.out.println("\n\t> "+pelaaja+": HP juomia on nyt "+potion+"\n");
 	        			 }
 	        			 else {
-	        				 System.out.println(pelaaja+": HP juomia ei enään ole...");
+	        				 System.out.println(pelaaja+": Huomaat että sinulla ei enään ole pulloja...");
 	        			 }
 	        			 
 	        		 }
@@ -209,18 +210,23 @@ package koodi;
                  System.out.println("              |	        |");
 				 System.out.println("              \\        /");		
 	        	 System.out.println("\t# " + koira + " voitettiin! #\n" );
-	        	 System.out.println("\t# "+pelaaja+": Minulle jäi "+hp+" HP Pistettä jäljelle #\n" );
+	        	 System.out.println("\t# "+pelaaja+": Minulle jäi "+hp+" HP:ta jäljelle #\n" );
 	        	 System.out.println("------------------------------------------------------------------------------");
 	        	 if(rand.nextInt(100) < potiondrop) {
 	        		 potion++;
-	        		 System.out.println(pelaaja+": Löysin yhden HP juoman");
-	        		 System.out.println(pelaaja+" HP juomia on nyt"+potion);
+	        		 System.out.println(pelaaja+": Löysin yhden HP pullon");
+	        		 System.out.println(pelaaja+" HP pulloja on nyt"+potion);
 	        	 }
 	        	 if(rand.nextInt(100) < koiradrop) {
 	        		String ase = koiraAse [rand.nextInt(koiraAse.length)];
 	        		 at+=koiraAt;
 	        		 System.out.println(pelaaja+": Löysin "+ase+" aseen");
-	        		 System.out.println(pelaaja+" Hyökkäykseni tekee nyt maximissaan "+at+" vahinkoa");
+	        		 System.out.println(" __                                  __"); 
+                     System.out.println("/  \\________________________________/  \\");
+                     System.out.println("\\                                      / ");
+                     System.out.println("/    ________________________________  \\");
+                     System.out.println("\\__/                                \\__/");
+					 System.out.println(pelaaja+": Hyökkäykseni tekee nyt maximissaan "+at+" vahinkoa");
 	        	 }
 	        	 System.out.println(""); // Jatka tarinaa tästä
 	        
