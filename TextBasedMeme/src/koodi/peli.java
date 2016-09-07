@@ -111,6 +111,7 @@ package koodi;
 	         	System.out.println(" -Kuulet kovan äänen- ");
 	         	System.out.println(pelaaja+": Mitä?");
 	         	System.out.println(" -Avaat silmäsi ja huomaat että makaat pimeällä, kylmällä kadulla- ");
+	         	System.out.println("");
 	         	System.out.println("Nousetko ylös?");
 	         	System.out.println("Kyllä vai Ei");
 	         	valinta1 = lukijas.nextLine();
@@ -122,12 +123,15 @@ package koodi;
 	         }else if(valinta1.equals("Kyllä")){
 	         	System.out.println(" -Nouset ylös, näkösi on vähän sumea ja päätäsi särkee- ");
 	         	System.out.println(pelaaja+": Missä olen? ");
+	         	System.out.println("");
 	         	System.out.println(" -Hierot silmiäsi- ");
 	         	System.out.println(" -Kun näkösi selvenee huomaat olevasi loputtomalta tuntuvalla kadulla, näet himmeän valon- ");
 	         	System.out.println(pelaaja+": Onko siellä joku?");
+	         	System.out.println("");
 	         	System.out.println(" -Kuulet saman kovan äänen uudestaan- ");
 	         	System.out.println(pelaaja+": Mistä tuo tulee?");
 	         	System.out.println(" - Käännyt ympäri ja huomaat että ääni kuuluu nyt edessäsi olevalta kujalta- ");
+	         	System.out.println("");
 	         	System.out.println(" Seuraatko ääntä? ");
 	         	System.out.println("Kyllä vai Ei");
 	         	valinta2 = lukijas.nextLine();
@@ -138,7 +142,9 @@ package koodi;
 	         	System.out.println(" ");// TIE 1: JOKU LISÄÄ TÄHÄN PASKAA
 	         }else if(valinta2.equals("Kyllä")){ // TIE 2: JOKU LISÄÄ TÄHÄN PASKAA
 	        	 System.out.println("Kävelet kujaa päin ja eteesi hyppää villi koira");
+	        	 System.out.println("");
 	        	 System.out.println(pelaaja+": Kiltti koira, en tahdo sinulle pahaa");
+	        	 System.out.println("");
 	        	 System.out.println("Koira murisee ja hyökkää. Sinun on pakko taistella");
 	        	 
 	        	 int hpv = rand.nextInt (maxhpv);
@@ -171,6 +177,7 @@ package koodi;
 	        			 if(hp < 1) {
 	        				 System.out.println(pelaaja+" on saanut liian paljon vahinkoa");
 	        				 System.out.println("-Menetät tajuntasi-");
+	        				 System.out.println("");
 	        				 System.out.println("Paina ENTER jatkaaksesi");
 	        		         	lukijas.nextLine();
 	        				 System.out.println("");// lisää credits tähän
