@@ -148,7 +148,7 @@ package koodi;
 	         if(valinta2.equals("Ei") || valinta2.equals("ei")){
 	         	System.out.println(" -Lähdet seuraamaan aiemmin näkemääsi valoa- ");
 	         	System.out.println(" ");// TIE 1: JOKU LISÄÄ TÄHÄN PASKAA
-	         	System.out.println(" -Matkalla valoa päin, sinut pysäyttää mustiin pukeutunut mies")
+	         	System.out.println(" -Matkalla valoa päin, sinut pysäyttää mustiin pukeutunut mies");
 	         	System.out.println("?: Hei kamu, tuuks mukaan? Mennää mettää");
 	         	System.out.println("?: Jos tuut messii, voin pitää sut turvassa");
 	         	System.out.println(" ");
@@ -160,7 +160,18 @@ package koodi;
 	         		System.out.println(" -Et huomio miestä ja jatkat matkaa");
 	         		System.out.println(" ");
 	         		System.out.println(" -Pääset vihdoin valon tuottajan luokse");
-	         		System.out.println(" -Huomaat, että valon tuottaja oli todella vahva taskulamppu"); //TIE 4: JOKU LISÄÄ TÄHÄN PASKAA
+	         		System.out.println("                 ______");
+                    System.out.println("                /      \\"); 
+                    System.out.println("               /  __   /"); 
+                    System.out.println("              /  /-/  /");
+                    System.out.println("             /  /O/  /");
+                    System.out.println("            /___    /");
+                    System.out.println("           /    \\ /");
+                    System.out.println("     ----  |(O) | / ----");
+                    System.out.println("        ´  \\____//  ´ ");
+                    System.out.println("       ´  ´ /  \\    ´  ´");
+                    System.out.println("      ´  ´ /    \\  ´  ´");
+					System.out.println(" -Huomaat, että valon tuottaja oli todella vahva taskulamppu"); //TIE 4: JOKU LISÄÄ TÄHÄN PASKAA
 	         		
 	         	}else if(valinta3.equals("Kyllä") || valinta3.equals("kyllä")){ // TIE 3: JOKU LISÄÄ TÄHÄN PASKAA
 	         		
