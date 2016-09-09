@@ -11,8 +11,8 @@ package koodi;
 			Random rand = new Random();
 			
 			//Tähän laitetaan niitten scriptattujen eventtien vihollisten nimet, hp ja attack.
-			String[] koirat ={"Pörö Koira", "Tolkien Koira","Burgeri Koira","Tavi Koira","Api Koira","Spörö Koira","Ravi Koira"}; //koiran nimiä. et peli randomilla valitsee jonkun näist.
-			String[] koiraAse ={"Luu","Irronnut luu","I've got a bone to pick with you","Haukuttaja"};
+			String[] koirat ={"Pörö Koira", "Tolkien Koira","Burgeri Koira","Tavi Koira","Api Koira","Spörö Koira","Ravi Koira","YLYL Koira","gOIRa"}; //koiran nimiä. et peli randomilla valitsee jonkun näist.
+			String[] koiraAse ={"Luu","Irronnut luu","I've got a bone to pick with you","Haukuttaja","Much WOW","Luutin"};
 			int maxhpv= 100;
 			int maxatv= 45;
 			
