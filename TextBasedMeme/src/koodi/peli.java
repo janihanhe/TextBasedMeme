@@ -35,12 +35,13 @@ package koodi;
 			System.out.println("------------------------------------------------------------------------------");
 			System.out.println("");
 			System.out.println("");
-			System.out.println("  _______        _   ____                     _ __  __                     ");
-			System.out.println(" |__   __|      | | |  _ \\                   | |  \\/  |                    ");
-			System.out.println("    | | _____  _| |_| |_) | __ _ ___  ___  __| | \\  / | ___ _ __ ___   ___ ");
-			System.out.println("    | |/ _ \\ \\/ / __|  _ < / _` / __|/ _ \\/ _` | |\\/| |/ _ \\ '_ ` _ \\ / _ \\");
-			System.out.println("    | |  __/>  <| |_| |_) | (_| \\__ \\  __/ (_| | |  | |  __/ | | | | |  __/");
-			System.out.println("    |_|\\___/_/\\_\\__|____/ \\__,_|___/\\___|\\__,_|_|  |_|\\___|_| |_| |_|\\___|");
+			System.out.println("     __ __ _  _          _______                _     _              ___");
+			System.out.println("    |  \\/  (_) |        |__   __|              | |   | |            |__ \\ ");
+			System.out.println("    | \\  / |_| |_ __ _     | | __ _ _ __   __ _| |__ | |_ _   _ _   _  ) |");
+			System.out.println("    | |\\/| | | __/ _` |    | |/ _` | '_ \\ / _` | '_ \\| __| | | | | | |/ /");
+			System.out.println("    | |  | | | || (_| |    | | (_| | |_) | (_| | | | | |_| |_| | |_| |_|");
+			System.out.println("    |_|  |_|_|\\__\\__,_|    |_|\\__,_| .__/ \\__,_|_| |_|\\__|\\__,_|\\__,_(_)  ");
+			System.out.println("                           |_|                                  ");
 			System.out.println("");
 			System.out.println("                         -The Text Adventure Game-                  ");
 	        	System.out.println("------------------------------------------------------------------------------");
@@ -254,7 +255,7 @@ package koodi;
 	        	 if(rand.nextInt(100) < potiondrop) {
 	        		 potion++;
 	        		 System.out.println(pelaaja+": Löysin yhden HP pullon");
-	        		 System.out.println(pelaaja+" HP pulloja on nyt"+potion);
+	        		 System.out.println(pelaaja+": HP pulloja on nyt "+potion);
 	        	 }
 	        	 if(rand.nextInt(100) < koiradrop) {
 	        		String ase = koiraAse [rand.nextInt(koiraAse.length)];
